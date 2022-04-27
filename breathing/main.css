@@ -7,3 +7,50 @@
 * {
   box-sizing: border-box;
 }
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgba(34,65,137); /* Fallback color */
+  background-color: rgba(34,65,137, 0.4); /* Black w/opacity/see-through */
+  color: #E4c173;
+  /* font-weight: bold; */
+  font-size: 20px;
+  border:7px solid rgba(34,65,137, 0.6);
+  border-radius: 30%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+  animation:try 10s infinite;
+}
+
+@keyframes try {
+
+  20% {
+    -webkit-filter: blur(1px);
+  }
+
+  30% {
+    -webkit-filter: blur(3px);
+  }
+
+  40% {
+    -webkit-filter: blur(2px);
+  }
+
+  60% {
+    -webkit-filter: blur(1px);
+  }
+
+  80% {
+    -webkit-filter: blur(10px);
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
