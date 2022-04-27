@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #224189;
+  color:#E4C173;
+  font-family: 'Co Text';
+  font-size:50px;
+}
+
+img {
+  width: 30%;
+  /* margin-right: 10em; */
+}
+
+.h {
+  color: #E4C173;
+  font-family: 'Co Text', monospace;
+}
+
+.p1 {
+  font-color: #E4C173;
+  font-family: 'Co Text', monospace;
+  font-style: oblique;
+  font-size:50px;
+}
+
+.felx-content1{
+  position:flex;
+  margin-top:15%;
+  /* display:block; */
+}
+
+.content{
+  position:flex;
+  margin-top:10%;
+  /* display:block; */
+}
+
+.box{
+  position:flex;
+  margin-left:55%;
+  margin-top: 10%;
+}
+
+.box1{
+  position:flex;
+  margin-left:70%;
+  margin-top:10%;
+}
+
+textarea {
+  display: flex;
+  font-family: 'Co Text', monospace;
+  font-style:oblique;
+  font-size:20px;
+  color: #224189;
+  background-color: #babac4;
+  width: 60vh;
+  height: 30vh;
+  border: 1px #202020;
+  border-radius: 35% 35% 35% 35%;
+  padding: 15px 15px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  text-align: center;
+}
+
+#text-display {
+  font-family: 'Co Text', bold, monospace;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+  color:#224189;
+  background: #babac4;
+  /* border: 1px dotted white; */
+  padding: 1rem;
+  text-align: center;
+  min-height: 4.6rem;
+  margin: .5rem 0;
+}
