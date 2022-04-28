@@ -11,6 +11,7 @@ body {
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   /* position: center; */
+  position: fixed;
   right: 0;
   bottom: 0;
   margin-left:auto;

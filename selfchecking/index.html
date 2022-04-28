@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -12,36 +12,33 @@
 </head>
 
 <body>
+  <!-- <div class="flexbox">
+  <h>
+    the one thing that you never give up on......myself (from emma winters)
+  </h></div>
 
-  <div class="frame">
-  </div>
-  <div class="frame frame2">
-  </div>
-<image src="sky3.jpeg" alt="streetview">
-  </div>
-  <script src="/scrollbooster.min.js"></script>
-  <script>
-    const viewport = document.querySelector('.example3-viewport');
-    const content = document.querySelector('.example3-content');
-    const image = document.querySelector('.example3-image');
+  <video autoplay muted loop id="myVideo">
+  <source src="eye.mp4" type="video/mp4">
+</video> -->
 
-    const sb = new ScrollBooster({
-      viewport,
-      content,
-      scrollMode: 'transform',
-      emulateScroll: true
-    });
+<div class="right-eye">
+  <div class="shut">
+    <span>
+      <div class="box"><h>name one thing that you never give up on......
+    </h></div></span>
+  </div>
+  <div class="ball">
+</div>
+</div>
 
-    image.addEventListener('load', () => {
-      // set viewport position to the center of an image
-      const offsetX = image.scrollWidth - viewport.offsetWidth;
-      const offsetY = image.scrollHeight - viewport.offsetHeight;
-      sb.setPosition({
-        x: offsetX / 2,
-        y: offsetY / 2
-      });
-    });
-  </script>
+<div class="left-eye">
+  <div class="shut">
+    <span></span>
+  </div>
+  <div class="ball">
+</div>
+</div>
+
 </body>
 
 </html>

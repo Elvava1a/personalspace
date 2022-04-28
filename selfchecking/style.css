@@ -4,67 +4,110 @@
   padding: 0;
 }
 
-html {
+/* html {
   width: 100%;
   height: 100%;
+  background-color: #224189;
+} */
+
+body{
+    font-family: 'Co Text', sans-serif;
+    /* color:#224189; */
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(25, 35, 70, .92);
+/* .h{
+  z-index: -2;
+} */
+
+/* .flexbox{
+  position: fixed;
+  margin-top: 50%;
+  margin-left: 50%;
+} */
+
+/* #myVideo {
+position: fixed;
+right: 0;
+bottom: 0;
+margin-left: auto;
+width: 100%;
+height: 100%;
+} */
+
+body{
+  margin:0;
+  padding:0;
+  background:#224189;
+  color:#e4c173;
 }
 
-.cursors {
-  display: flex;
-  flex-wrap: wrap;
+.h{
+  position: center;
 }
 
-.class {
-  cursor: url('star.png');
+.box{
+  top:50%;
+  left:30%;
 }
 
-.frame {
-  width: 100%;
-  height: 100%;
+.right-eye{
+  background:#e4c173;
+  height:400px;
+  width:400px;
   position:absolute;
-  border: 80px solid rgba(25, 35, 70, .92);
-top:0;
-left:0;
-border-radius: blur(10px);
+  top:50%;
+  left:30%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border-radius : 75% 0;
+  overflow:hidden;
+
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+
+.left-eye{
+  background:#e4c173;
+  height:200px;
+  width:200px;
+  position:absolute;
+  top:50%;
+  left:70%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border-radius : 75% 0;
+  overflow:hidden;
+  text-align: center;
+}
+/* .ball{
+  width:40px;
+  height:40px;
+  background: #e4c173;
+  border-radius: 50%;
+  border: 30px solid #576;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+} */
+
+.shut{
+  width:500px;
+  height:350px;
+  top:50%;
+  left:50%;
+  position:absolute;
+  transform:translate(-50%,-50%) rotate(-45deg);
+  z-index:999;
 }
 
-/* img:hover {
-    -webkit-animation: image_blur 3s, infinite;
-} */
-/* canvas {
-  width: 100%;
-  height: 100%;
-} */
-@-webkit-keyframes image_blur {
-  0% {
-    -webkit-filter: blur(0px);
-  }
+.shut span{
+  display:block;
+  width:100%;
+  height:20%;
+  background:#224189;
+  border-radius: 0 0 60% 60%;
+  transition:0.4s all;
+}
 
-  40% {
-    -webkit-filter: blur(15px);
-  }
-
-  60% {
-    -webkit-filter: blur(0px);
-  }
-
-  80% {
-    -webkit-filter: blur(10px);
-  }
-
-  100% {
-    -webkit-filter: blur(0px);
-  }
+.right-eye:hover >.shut span ,
+.left-eye:hover >.shut span{
+  height:100%;
 }

@@ -2,15 +2,43 @@
   height: 100%;
   margin:0;
   font-family: 'Co Text';
+  color:#E4C173;
+  background-color: rgba(34,65,137, 0.6);
   }
 
 * {
   box-sizing: border-box;
+
+}
+
+img{
+  width:10%;
+}
+
+.h{
+  font-family: 'Co Text', monospace;
+  font-size: 150px;
+}
+
+.box2{
+  position: fixed;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+}
+
+.flexbox{
+  position: flex;
+  top: 20%;
+  left: 50%;
 }
 
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-color: rgba(34,65,137); /* Fallback color */
+  background-color: rgb(34,65,137); /* Fallback color */
   background-color: rgba(34,65,137, 0.4); /* Black w/opacity/see-through */
   color: #E4c173;
   /* font-weight: bold; */
@@ -19,6 +47,18 @@
   border-radius: 30%;
   position: fixed;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+  animation:try 10s infinite;
+}
+
+.box{
+  position: fixed;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
