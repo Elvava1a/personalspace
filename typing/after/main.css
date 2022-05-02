@@ -3,7 +3,7 @@
 }
 
 body {
-  background:  #060e1d;
+  background:  #224189;
   overflow: hidden;
   font-family: 'Co Text', sans-serif;
   padding: 0;
@@ -142,7 +142,7 @@ body {
 
 .shredded-paper > .shred-me {
   font-weight: bold;
-  background: linear-gradient(#092e4a, #031727);
+  background: linear-gradient(#e4c173, #224189);
   color: #FFF;
   cursor: pointer;
   transition: all 0.1s ease-out;
@@ -161,7 +161,7 @@ body {
 }
 
 .shred-me:hover {
-  background: linear-gradient(#0f4065, #072944);
+  background: linear-gradient(#224189, #7299d0);
   transform: scale(1.02);
 }
 
